@@ -1,0 +1,15 @@
+/*this css style is made for index page*/
+body {
+    margin: 0;
+    background-color: #FCFCFC;
+}
+/*this class keep items in center and margin both sides*/
+.common-flex{
+  display: flex;
+  position: center;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10%;
+  margin-left: 10%;
+  background-color: ;
+}
