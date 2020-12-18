@@ -397,8 +397,8 @@ body{
     display: flex;
     position: center;
     justify-content: center;
-    align-items: ;
-    background-color: ;
+    /* align-items: ;
+    background-color: ; */
     flex-direction: row-reverse;
   }
   
@@ -407,14 +407,14 @@ body{
     text-align: center;
     padding-bottom: 20px;
   }
-  #specialiest1-img{
-  }
+  /* #specialiest1-img{
+  } */
   /*set size on sections and keep them in one column
    in left side of special service section*/
   #index-specialٍServices > section{
     display: flex;
     flex-direction: column;
-    justify-content: ;
+    /* justify-content: ; */
     align-items: center;
     flex-wrap: wrap; 
     width: 300px;
@@ -425,7 +425,7 @@ body{
     width: 300px;
     height: auto;
   
-  }
+  
   }
   #corona-img1{
     padding-top: 10px;  
