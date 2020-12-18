@@ -1,0 +1,49 @@
+/***********header*************/
+/*header container*/
+.header-items-container{
+  display: flex;
+/*  border:1px solid green;
+*/ flex-direction: row-reverse;
+  padding-left: 240px;
+  line-height: 52px;
+  flex-wrap: wrap;
+}
+/*space between items*/
+.header-items-container > a{
+  margin: 10px;
+}
+/*item svg*/
+.header-items-container > a > svg{
+    transform:translate(0px,8px);
+}
+/*sort header sections in rows and keep them in center*/
+.header-sections{
+  width: 100vw;
+  display: flex;
+/*  border:1px solid green;
+*/  flex-direction: row-reverse;
+  line-height: 52px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#index-darmankadeh-logo{
+}
+/*login button style*/
+#index-login-btn{
+  background-color: #ededed;
+  border-radius: 5px!important;
+  font-size: 16px;
+  color: #1780df;
+
+  font-weight: 700!important;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.25rem;
+  padding-top: 0.25rem;
+}
+/*login button svg style*/
+#index-login-btn > svg{
+  padding-right: 15px;
+  transform:translate(0px,8px) rotate(180deg);
+}
