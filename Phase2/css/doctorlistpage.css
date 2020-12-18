@@ -460,12 +460,3 @@ body{
     margin-right: 10%;
     border-radius: 20px;
 }
-/* search bar header */
-#searchbararea h1 {
-    display: flex;
-    justify-content: center;
-    padding-top: 40px;
-    color: white;
-    font-size: 30;
-    font-family: "Vazirfontfamily";
-}
