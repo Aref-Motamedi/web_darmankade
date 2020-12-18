@@ -448,15 +448,3 @@ body{
     background-color: #e6610d;
 }
 /*  */
-
-/* search bar area overals */
-#searchbararea {
-    background-image: url(./assets/mainpage/searchbarcover.png);
-    background-size: cover;
-    background-color: #1780df;
-    height: 280px;
-    margin: 50px;
-    margin-left: 10%;
-    margin-right: 10%;
-    border-radius: 20px;
-}
