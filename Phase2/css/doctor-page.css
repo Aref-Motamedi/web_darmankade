@@ -316,7 +316,7 @@ body {
   height: auto; 
 }
 
-#index-corona-btn2:hover , #dl-app-btn:hover, #index-corona-btn1:hover, #searchbar-form button:hover{
+#index-corona-btn2:hover , #dl-app-btn:hover, #index-corona-btn1:hover{
     background-color: #e6610d;
 }
 #foot1 > button:hover {
@@ -333,4 +333,4 @@ body {
 }
 #join-button:hover {
     background-color: #e6610d;
-
+}

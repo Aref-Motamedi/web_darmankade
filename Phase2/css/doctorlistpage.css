@@ -361,3 +361,89 @@ body{
     height: auto;
 
 }
+
+
+/******special services**********/
+/*set background and position of special services container*/
+#index-specialٍServices-container{
+    display: flex;
+    justify-content: center;
+    line-height: auto;
+    flex-direction: column;
+    margin-top: 20px;
+    background-image: url(./assets/index-page/corona-bg.png);
+    background-size: cover;
+    background-color: #1780df;
+  
+  }
+  /*keep rows on center*/
+  #index-specialٍServices-rows{
+    display: flex;
+    justify-content: center;
+    line-height: auto;
+    align-items: center;
+    flex-wrap: wrap; 
+    margin-right: 10%;
+    margin-left: 10%; 
+  }
+  /*position of first row*/
+  #index-bestٍSpecialties-row1-element2{
+      display: flex;
+      justify-content: flex-end;
+      color: #1780df;
+  }
+  /*keep elements on center an in one row and sort them reversal*/
+  #index-specialٍServices{
+    display: flex;
+    position: center;
+    justify-content: center;
+    align-items: ;
+    background-color: ;
+    flex-direction: row-reverse;
+  }
+  
+  #index-specialٍServices > div > h4{
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  #specialiest1-img{
+  }
+  /*set size on sections and keep them in one column
+   in left side of special service section*/
+  #index-specialٍServices > section{
+    display: flex;
+    flex-direction: column;
+    justify-content: ;
+    align-items: center;
+    flex-wrap: wrap; 
+    width: 300px;
+    margin: 3%;
+  }
+  /*set size of images*/
+  #index-specialٍServices > section > div > img{
+    width: 300px;
+    height: auto;
+  
+  }
+  }
+  #corona-img1{
+    padding-top: 10px;  
+  }
+  /*set style of buttons*/
+  #index-corona-btn1 , #index-corona-btn2{
+      color: white;
+      border: 0;
+      border-radius: 10px;
+      background-color: #fb815e;
+      margin-top: 12px; 
+      width: 300px;
+      height: 50px;
+  }
+  #index-corona-btn2{
+    margin-top: 35px;
+  }
+
+  #index-corona-btn2:hover , #index-corona-btn1:hoverr{
+    background-color: #e6610d;
+}
