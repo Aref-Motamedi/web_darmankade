@@ -1,0 +1,161 @@
+/*this css style is made for login page*/
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+}
+/*set background in center and fix*/
+#background {   
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+/*set height of container*/
+#container {
+  min-height: 100vh;
+  display: flex;
+}
+/*set left side size*/
+#left {
+	width: 66.66vw;
+	background-color: #fff
+}
+/*set right side size*/
+#right {
+  width: 33.33vw;
+	background-color: #1780df
+}
+/*keep things in center and sort as columns*/
+.center{
+	display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  height: 100vh;
+}
+/*welcome section container in right side of page*/
+#welcome-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    height: 100vh;
+}
+/*input*/
+#number-input{
+	 padding: 12px 10px;
+    width: 32vw;
+    border: 2px solid #cdcdcd;
+    position: relative;
+    border-radius: 5px;	
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #cdcdcd;
+  opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #cdcdcd;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #cdcdcd;
+}
+/*keep form in center using flex*/
+#form{
+	 display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+/*keep form in center using flex*/
+.form-group{
+	display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+}
+
+.form-group{
+  margin:10px;
+}
+/*set lable on border of input using absolute position*/
+.form-group>label{
+    text-align: right;
+    justify-self: right; 
+    position: absolute;
+    transform: translate(230%, -100%);
+    z-index: 10;
+    background-color: white;
+    color: #6e7794;
+}
+.form-group>input{
+  border:none;
+}
+/*login button style and position*/
+.btn-login{
+	background: #fb815e;
+  background-color: rgb(251, 129, 94);
+  color: white;
+  box-shadow: none;
+  width: 50%;
+  border: none;
+	padding: 16px;
+  display: inline-block;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 2px;
+	border-radius: 10px;
+	font-size: 1rem;
+}
+/*second button style and position*/
+.btn {
+  background: white;
+  background-color: white;
+  color: rgb(251, 129, 94);
+  box-shadow: none;
+  width: 20%;
+  border: 1px solid transparent;
+  border-color: rgb(251, 129, 94);
+	padding: .375rem .75rem;
+  display: inline-block;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 2px;
+	border-radius: 10px;
+	font-size: 1rem;
+	font-weight: 400;
+	transition-duration: 0.4s;
+}
+/*buttons hover*/
+.btn:hover{
+  background-color: rgb(251, 129, 94);
+  color: white;
+}
+/*text styles*/
+#w1-text{
+	color: white;
+    font-size: 22px;
+}
+#w2-text{
+	color: white;
+    font-size: 14px;
+}
+#login-logo{
+	width: 120%;
+	height: auto;
+	transform:translate(-15px,10px);
+}

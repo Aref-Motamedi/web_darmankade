@@ -1,0 +1,53 @@
+/*in this class the most common using classes are defined*/
+.font-Vazir{
+	font-family: Vazir;
+}
+.right-text{
+	text-align: right;
+}
+.text-16 {
+    font-size: 16px;
+}
+.text-18{
+  font-size: 18px;
+}
+.text-20{
+  font-size: 20px;
+}
+.text-28{
+  font-size: 28px;
+}
+.font-weight700{
+  font-weight: 700;
+}
+.font-weight-bold {
+    font-weight: 700!important;
+}
+.white{
+  color: white;
+}
+.height80px{height: 80px;}
+width: 40px
+
+.width40px{
+  width: 40px;
+}
+a{
+   text-decoration: none;
+}
+
+/*hover*/
+a:hover{
+  color: rgb(251, 129, 94);
+}
+a,h1,h2,h3,h4,h5,p,b,br,button{
+    font-family: Vazir;
+    color: black;
+}
+button{
+	font-weight: 700!important;
+}
+@font-face {
+    font-family: "Vazir";
+    src: url("./assets/fonts/Vazir.ttf");
+}

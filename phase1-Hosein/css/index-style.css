@@ -1,0 +1,627 @@
+/*this css style is made for index page*/
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FCFCFC;
+}
+/*this class keep items in center and margin both sides*/
+.common-flex{
+  display: flex;
+  position: center;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10%;
+  margin-left: 10%;
+  background-color: ;
+
+}
+/***********header*************/
+/*header container*/
+.header-items-container{
+  display: flex;
+/*  border:1px solid green;
+*/ flex-direction: row-reverse;
+  padding-left: 240px;
+  line-height: 52px;
+  flex-wrap: wrap;
+}
+/*space between items*/
+.header-items-container > a{
+  margin: 10px;
+}
+/*item svg*/
+.header-items-container > a > svg{
+    transform:translate(0px,8px);
+}
+/*sort header sections in rows and keep them in center*/
+.header-sections{
+  width: 100vw;
+  display: flex;
+/*  border:1px solid green;
+*/  flex-direction: row-reverse;
+  line-height: 52px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#index-darmankadeh-logo{
+}
+/*login button style*/
+#index-login-btn{
+  background-color: #ededed;
+  border-radius: 5px!important;
+  font-size: 16px;
+  color: #1780df;
+
+  font-weight: 700!important;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.25rem;
+  padding-top: 0.25rem;
+}
+/*login button svg style*/
+#index-login-btn > svg{
+  padding-right: 15px;
+  transform:translate(0px,8px) rotate(180deg);
+}
+#index-search-bar{
+}
+/**********search bar***********/
+/*set background and size of search bar section*/
+#search-bar-section{
+  display: flex;
+  border:1px solid green;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;  
+  height: 240px;
+  width: 100vw;
+  background-image: url(./assets/index-page/search-bar-bg.png);
+  background-size: cover;
+  background-color: #1780df;
+  border-radius: 20px!important;
+}
+/*search bar text style*/
+#search-bar-section > h1{
+  color: white;
+  font-size: 40px;
+  font-color: white;
+}
+/*keep search bar form elements in one row*/
+#searchbar-form {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding-top: 15px;
+    height: 60px;
+}
+/*search form input style*/
+#searchbar-form input {
+    width: 330px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+/*search form select style*/
+#searchbar-form select {
+    width: 150px;
+}
+
+}
+/*search form select option style*/
+#searchbar-form select option {
+    border-radius: 5px;
+}
+/*set search form style*/
+#searchbar-form button {
+    font-size: large;
+    width: 150px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color: white;
+    background-color: #fa6439;
+    border-color: #fa5a2c;
+}
+/**************Best Specialists***********/
+/*specialists section container*/
+#index-bestٍSpecialties-container{
+  display: flex;
+  justify-content: center;
+  line-height: auto;
+  flex-direction: column;
+  margin-top: 20px;
+}
+/*keep two rows in a flexbox*/
+#index-bestٍSpecialties-rows{
+  display: flex;
+  justify-content: space-between;
+  line-height: auto;
+/*  border:1px solid red;
+*/flex-direction: row-reverse;
+  align-items: center;
+  flex-wrap: wrap; 
+  margin-right: 10%;
+  margin-left: 10%; 
+}
+/*set position of text in first row*/
+#index-bestٍSpecialties-row1-element2{
+    display: flex;
+    justify-content: flex-end;
+    color: #1780df;
+}
+/*sort specialists boxes in a row and keep them on center*/
+#index-bestٍSpecialties{
+  display: flex;
+/*  border:1px solid yellow;
+*/flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;  
+  height: auto;
+}
+/*specialist images padding*/
+.specialiest-img-padding{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 100px;
+  height: 85px;
+}
+#index-bestٍSpecialties > div > h1{
+  font-size: 14px;
+}
+#specialiest1-img{
+}
+/*set size and style of boxes and space between them*/
+#index-bestٍSpecialties > div{
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,.125)!important;
+  display: flex;
+  background-color: white;
+  height: 150px;
+  width: 125px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  margin: 8px; 
+}
+/*set specialists background color*/
+#specialiest1-img-bg-color{
+  background-color: #e8c9fd;
+}
+#specialiest2-img-bg-color{
+  background-color: #fcbaba;
+}
+#specialiest3-img-bg-color{
+  background-color: #b3e8ca;
+}
+#specialiest4-img-bg-color{
+  background-color: #abc2d8;
+}
+#specialiest5-img-bg-color{
+  background-color: #fbcbee;
+}
+#specialiest6-img-bg-color{
+  background-color: #c5e1fb;
+}
+#specialiest7-img-bg-color{
+  background-color: #fdcdb0;
+}
+/**********comment section************/
+/*keep in a row and sort them reverse*/
+#index-comments{
+  flex-direction: row-reverse;
+  /*  border:1px solid green;
+*/  margin-top: 50px;
+
+/*  justify-content: center;
+  align-items: center;*/
+}
+#index-comments > section{
+  justify-content: space-between;
+  align-items: ;
+}
+/*set position of right side in comment section*/
+#index-comment-right{
+  padding-bottom: 100px;
+  padding-right: 20px;
+  width: 
+  padding-right:  
+}
+/*set style and position of comment box in left*/
+#index-comment-box{
+    padding: 10px;
+    width: 60%;
+    margin-right: 100px;
+    height: 350px;
+    background-color: #e5f2fe;
+    border: 1px solid #1780df;
+    border-radius: 15px;
+}
+#index-comment-box div{
+/*   display: flex;
+    border:1px solid green;
+  flex-direction: row-reverse;*/
+}
+/*keep comment writer information in a row*/
+#index-comment-writer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 
+}
+/*position of comment writer*/
+#index-comment-writer div{ 
+    margin-left: 20px;
+    margin-right: 20px;
+    transform: translate(0%,10%);
+}
+/*style of comment text*/
+#index-comment-text{
+    margin: 10px;
+    height: 250px;
+    border-bottom: 2px dashed #1465b1;
+}
+/*send button*/
+#index-comment-writer > button{
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    background-color: #fb815e;
+    margin-top: 12px; 
+    width: 140px;
+    height: 50px;
+}
+/*double quatation style on top of box*/
+#double-quatation{
+    width: 50px; 
+    height: auto;
+    position: absolute;
+    transform: translate(-160%,-110%);
+  }
+  /*triangle style in bottom of box*/
+ .triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid #e5f2fe;
+	transform: translate(120%,-10%);
+}
+#index-comment-writer-name{
+	margin-left: 40px;
+}
+
+/******special services**********/
+/*set background and position of special services container*/
+#index-specialٍServices-container{
+  display: flex;
+  justify-content: center;
+  line-height: auto;
+  flex-direction: column;
+  margin-top: 20px;
+  background-image: url(./assets/index-page/corona-bg.png);
+  background-size: cover;
+  background-color: #1780df;
+
+}
+/*keep rows on center*/
+#index-specialٍServices-rows{
+  display: flex;
+  justify-content: center;
+  line-height: auto;
+  align-items: center;
+  flex-wrap: wrap; 
+  margin-right: 10%;
+  margin-left: 10%; 
+}
+/*position of first row*/
+#index-bestٍSpecialties-row1-element2{
+    display: flex;
+    justify-content: flex-end;
+    color: #1780df;
+}
+/*keep elements on center an in one row and sort them reversal*/
+#index-specialٍServices{
+  display: flex;
+  position: center;
+  justify-content: center;
+  align-items: ;
+  background-color: ;
+  flex-direction: row-reverse;
+}
+
+#index-specialٍServices > div > h4{
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+#specialiest1-img{
+}
+/*set size on sections and keep them in one column
+ in left side of special service section*/
+#index-specialٍServices > section{
+  display: flex;
+  flex-direction: column;
+  justify-content: ;
+  align-items: center;
+  flex-wrap: wrap; 
+  width: 300px;
+  margin: 3%;
+}
+/*set size of images*/
+#index-specialٍServices > section > div > img{
+  width: 300px;
+  height: auto;
+
+}
+}
+#corona-img1{
+  padding-top: 10px;  
+}
+/*set style of buttons*/
+#index-corona-btn1 , #index-corona-btn2{
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    background-color: #fb815e;
+    margin-top: 12px; 
+    width: 300px;
+    height: 50px;
+}
+/******download application*****/
+/*keep elements in one row using flex*/
+#index-dl-app{
+  display: flex;
+  position: center;
+  justify-content: center;
+  align-items: ;
+  background-color: ;
+  flex-direction: row-reverse;
+  margin: 8%;
+}
+/*set margin between two sections*/
+#index-dl-app > section{
+  margin: 3%;
+}
+/*set image size*/
+#dl-app-img{
+  width: 460px;
+  height: auto;
+}
+/*keep three logos in one row*/
+#index-dl-app-right-logos{
+  display: flex;
+  position: center;
+  justify-content: center;
+  align-items: center;
+  background-color: ;
+  flex-direction: row;
+}
+/*set size of logos*/
+#index-dl-app-right-logos > div > img{
+  width: 30px;
+  height: auto;
+  padding: 5px
+}
+/*position of left side section*/
+#index-dl-app-left{
+  padding-left: 80px;
+  padding-bottom: 80px;
+}
+#index-dl-app-left > div{
+  padding-bottom: 30px;
+}
+/*keep form elements in one row*/
+#dl-app-form {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding-top: 5px;
+    height: 50px;
+    border-color: #ced4da;
+}
+/*style of send link input*/
+#dl-app-form input {
+    width: 250px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+#dl-app-form select {
+    width: 150px;
+}
+/*set style of send link button*/
+#dl-app-btn{
+   color: white;
+    border: 0;
+    border-radius: 10px;
+    background-color: #fb815e;
+    width: 150px;
+    height: 50px;
+    margin-left: 25PX;
+}
+
+/******footer*********/
+/*set footer section background color*/
+#footerdiv {
+    padding-top: 50px;
+    background-color: #1780df;
+    
+    text-align: center;
+    width: 100%;
+    height: 800px;
+}
+/*keep elements in one row*/
+#threefoots {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+}
+/*keep section elements in columns*/
+#foot1 , #foot3{
+    /* width: 30%; */
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+/*position of second section*/
+#foot2 { 
+    /* width: 70%; */
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    padding-left: 13.5%;
+    padding-right: 13.5%;
+    text-align: center;
+
+}
+/*set style and position of vertical line*/
+#verticalline{
+    text-align: center;
+    display: absolute;
+    transform: translate(10px,0);
+    height: 150px;
+    width: 2px;
+    background-color: white;
+    z-index: 10;
+    margin: 10px;
+}
+#foot2 > div {
+    margin: 30px;
+}
+#foot1{
+    padding-right: 150px;
+}
+#foot3{
+    padding-left: 150px;
+}
+/*set style of section one and three buttons*/
+#foot1 > button , #foot3 > button {
+    color: white;
+    border: none;
+    border-top: 1px solid white;
+    height: 40px;
+    width: 150px;
+    background-color: transparent;
+}
+#khabarname {
+    width: 25%;
+    padding-left: 37.5% ;
+}
+/*keep in a row*/
+#onelineinput {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+}
+/*set style and position of inputs */
+#khabarname > form > div > #name {
+    width: 50%;
+    height: 40px;
+    margin-left: 2px;
+    border-radius: 5px;
+    text-align: right;
+    border: none;
+}
+#khabarname > form > div > #fname {
+    width: 50%;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 2px;
+    text-align: right;
+    border: none;
+
+}
+#khabarname > form > #email {
+    margin-top: 4px;
+    width: 100%;
+    height: 40px;
+    text-align: right;
+    border-radius: 5px; 
+    border: none;
+
+}
+/*set style and position of button*/
+#khabarname > form > button {
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    background-color: #fb815e;
+}
+/*keep elements in one row*/
+#end-of-footer {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+}
+#pricipals{
+    padding-right: 10%;
+    padding-left: 10%;
+}
+#lastword{
+    padding-right: 28%;
+}
+/*keep standars logos in one row and set space between them*/
+#standard-logos{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+/*ser background and border for standard logos*/
+#standard-logos > div{
+  height: 110px;
+  background-color: white; 
+  margin: 8px;
+  border-radius: 10px!important;
+  margin-bottom: 10px;
+}
+/*set the size of standard logos*/
+#standard-logos > div > img{
+  width: 95px;
+  height: auto; 
+}
+/*********hovers**********/
+#index-corona-btn2:hover , #dl-app-btn:hover, #index-corona-btn1:hover, #searchbar-form button:hover{
+    background-color: #e6610d;
+}
+#index-comment-writer button:hover{
+    background-color: #fa6439;
+}
+#index-login-btn:hover{
+    color: red;
+}
+#index-bestٍSpecialties-row1-element2:hover{
+    color: red;
+}
+#index-bestٍSpecialties > div:hover{
+  box-shadow: 5px 10px 18px #888888;
+
+}
+.common-hover:hover{
+}
+#foot1 > button:hover {
+    color: #1780df;
+    background-color: white;
+    border-top: none;
+    cursor: pointer;
+}
+#foot3 > button:hover {
+    color: #1780df;
+    background-color: white;
+    border-top: none;
+    cursor: pointer;
+}
+#khabarname > form > button :hover {
+    background-color: #e6610d;
+
+}
