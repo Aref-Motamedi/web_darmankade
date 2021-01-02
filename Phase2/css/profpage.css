@@ -215,3 +215,101 @@ body{
     /* background-color: blueviolet; */
 
 }
+
+
+/* footer area */
+#footerarea {
+    background-color: #1780df;
+    height: 280px;
+    padding-top: 50px;
+    text-align: center;
+    font-family: "Vazirfontfamily";
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+#rightcol {
+    padding: 20px;
+}
+
+/* three columns in footer area */
+#footercols{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    padding-right: 5%;
+    /* padding-left: 5%; */
+    width: 400px;
+}
+/* two button columns */
+.buttoncol{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+/* two button columns buttons+hover */
+.buttoncol button{
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid white;
+    color: white;
+    font-family: "Vazirfontfamily";
+    text-align: center;
+    /* margin-left: 30px;
+    margin-right: 30px; */
+}
+.buttoncol button:hover{
+    background-color: white;
+    border: none;
+    color: #1780df;
+    cursor: pointer;
+}
+/* middle column */
+#footercolmiddle {
+    width: 50%;
+}
+/* socialmedia links */
+#socialmedialink a {
+    margin: 50px;
+}
+
+/* footer note */
+#footernote {
+    font-family: "Vazirfontfamily";
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+}
+#footernote p {
+    width: 50%;
+    /* margin:; */
+}
+/* namaad + samandehi logos */
+#mellilogos {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-left: 18%;
+}
+#mellilogos  div{
+    margin: 20px;
+    background-color: white;
+    border: 1px groove rgb(231, 231, 231);
+    border-radius: 10px;
+    width: 100px;
+    height: 120px;
+}
+
+#mellilogos  div img{
+    margin-top: 10px;
+    width: 90px;
+    height: auto;
+
+}
+

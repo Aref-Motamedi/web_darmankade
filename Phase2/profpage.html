@@ -7,8 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- import css styles -->
         <link rel="stylesheet" type="text/css" href="./css/general.css"/>
-        <link rel="stylesheet" type="text/css" href="./css/doctor-page.css"/>
-        <link rel="stylesheet" type="text/css" href="./css/doctorlistpage.css"/>
+        <!-- <link rel="stylesheet" type="text/css" href="./css/doctor-page.css"/>
+        <link rel="stylesheet" type="text/css" href="./css/doctorlistpage.css"/> -->
         <link rel="stylesheet" type="text/css" href="./css/profpage.css"/>
         <link rel="stylesheet" type="text/css" href="./css/header.css"/>
         <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
@@ -297,10 +297,12 @@
         <!-- footer section -->
         <section id="footer">
             <div id="footerarea">
-                <img src="./assets/doctorlistpage/darmankadelogo.svg" alt="darmankadelogo">
-                <p>درمانکده، ارائه دهنده خدمات آنلاین سلامت</p>
-                <p>(نوبت گیری اینترنتی، مشاوره آنلاین، آزمایش در محل و ...)</p>
-                <br>
+                <div id="rightcol">
+                    <img src="./assets/doctorlistpage/darmankadelogo.svg" alt="darmankadelogo">
+                    <p>درمانکده، ارائه دهنده خدمات آنلاین سلامت</p>
+                    <p>(نوبت گیری اینترنتی، مشاوره آنلاین، آزمایش در محل و ...)</p>
+                    
+                </div>
 
                 <div id="footercols">
                     <!-- right side buttons -->
@@ -308,37 +310,6 @@
                         <button type="button">درباره درمانکده</button>
                         <button type="button">تماس با ما</button>
                         <button type="button" >مجله پزشکی</button>
-                    </div>
-                    <!-- middle side informations -->
-                    <div id="footercolmiddle">
-                        <!-- social media links -->
-                        <div id="socialmedialink">
-                            <a href="https://www.linkedin.com/company/darmankade.ir"><img src="./assets/doctorlistpage/linkedin.svg" alt="linkedin" style="width: 40px;"></a>
-                            <a href="https://twitter.com/darmankade"><img src="./assets/doctorlistpage/twitter.svg" alt="twitter" style="width: 40px;"></a>
-                            <a href="https://www.instagram.com/darmankade/"><img src="./assets/doctorlistpage/insta.svg" alt="insta" style="width: 40px;"></a>
-                        </div>
-                        <!-- this empty boxes are for that line -->
-                        <div id="twoemptybox">
-                            <div id="emptybox1"></div>
-                            <div id="emptybox2"></div>
-                        </div>
-                        <!-- notification form -->
-                        <div id="forminthecol">
-                            <p>با ثبت‌نام در خبرنامه درمانکده، اولین نفری باشید که از جدیدترین خبرها، جشنواره‌ها و تخفیف های ویژه ما مطلع می‌شوید</p>
-                            <form action="#k">
-                                <div>
-                                    <input type="text" placeholder="نام" class="field_devided">
-                                    <input type="text" placeholder="نام خانوادگی" class="field_devided">
-                                </div>
-                                <br>
-                                <input type="text" placeholder="ایمیل" id="emailinput">
-                                <br> <br>
-                                <button type="submit">عضو می شوم</button>
-                            </form>
-    
-    
-    
-                        </div>
                     </div>
                     <!-- left side buttons -->
                     <div id="footercolleft" class="buttoncol">
@@ -349,12 +320,19 @@
 
                 </div>
                 <!-- nahaad and samandehi logos -->
-                <div id="mellilogos">
-                    <div id="namaad">
-                        <img src="./assets/doctorlistpage/namaad.jpg" alt="namadelec">
+                <div id="third col">
+                    <div id="mellilogos">
+                        <div id="namaad">
+                            <img src="./assets/doctorlistpage/namaad.jpg" alt="namadelec">
+                        </div>
+                        <div id="samandehi">
+                            <img src="./assets/doctorlistpage/samandehi.jpg" alt="samandehi">
+                        </div>
                     </div>
-                    <div id="samandehi">
-                        <img src="./assets/doctorlistpage/samandehi.jpg" alt="samandehi">
+                    <div id="socialmedialink">
+                        <a href="https://www.linkedin.com/company/darmankade.ir"><img src="./assets/doctorlistpage/linkedin.svg" alt="linkedin" style="width: 40px;"></a>
+                        <a href="https://twitter.com/darmankade"><img src="./assets/doctorlistpage/twitter.svg" alt="twitter" style="width: 40px;"></a>
+                        <a href="https://www.instagram.com/darmankade/"><img src="./assets/doctorlistpage/insta.svg" alt="insta" style="width: 40px;"></a>
                     </div>
                 </div>
             </div>
