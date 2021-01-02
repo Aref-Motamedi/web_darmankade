@@ -1,7 +1,17 @@
-body{
+/* body{
     background-color: pink;
 
 }
 .pink-color{
     color:yellow;
+} */
+
+#slideshowarea {
+    display: flex;
+    margin: 30px;
+    
+}
+#slideshowarea img {
+    height: auto;
+    transform: translate(10%,0);
 }
