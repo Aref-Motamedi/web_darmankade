@@ -1,3 +1,7 @@
+body{
+    background-color: rgb(247, 247, 247);
+}
+
 /* putting a margin for the whole section (slideshow) */
 #slideshowarea {
     display: flex;
@@ -13,12 +17,11 @@
 #proflistdiv {
     display: flex;
     flex-direction: row-reverse;
-    height: 600px;
+    height: 1050px;
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left: 10%;
     margin-right: 10%;
-    
 }
 
 #scrolllist {
@@ -40,18 +43,33 @@
     direction: rtl;
     /* border-top-right-radius: 10px;
     border-top-left-radius: 10px; */
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    /* border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px; */
     /* border-radius: 10px; */
 }
 
+#proflistheader {
+    background-color: white;
+    border-radius: 10px;
+    border:1px solid rgba(197, 197, 197, 0.603);
+    
+}
 #proflistheader label{
     text-align: right;
+    /* padding-right: 20px; */
 }
 
 #proflistheader label p{
     font-size: small;
     color: rgb(160, 160, 160);
+    padding-right: 10px;
+
+}
+#proflistheader label h4{
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+
 }
 
 #proflistheader input {
@@ -65,8 +83,22 @@
     text-align: right;
 
     border: 1px solid rgba(177, 177, 177, 0.192);
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    /* border-top-right-radius: 10px;
+    border-top-left-radius: 10px; */
+    
+}
+
+#scrollabel {
+    /* width: 100%; */
+    height: 50px;
+    color: #1780df;
+    background-color: #8cb9e4;
+    text-align: center;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#scrollabel p{
+    padding-top: 10px;
 }
 
 .vertical-menu li {
@@ -85,4 +117,101 @@
 .vertical-menu a:hover {
     color: #1780df;
     border-bottom: 1px dashed #1780df;
+}
+
+/* -------------- */
+.itemcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.profitemcontainer {
+    height: 300px;
+    width: 230px;
+    margin-top: 30px;
+    border: 1px solid rgba(197, 197, 197, 0.603);
+    border-radius: 10px;
+    background-color: white;
+}
+.profitemcontainer:hover {
+    cursor: pointer;
+    border: 1px solid #fb815e;
+    
+}
+
+.profitemheader {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-right: 10%;
+    margin-top: 15px;
+    height: 70px;
+}
+
+.profitemheader p {
+    text-align: right;
+    margin-right: 7%;
+}
+
+.profitembody {
+    margin: 15px;
+    text-align: right;
+    height: 115px;
+}
+
+.profitemfooter {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 50px;
+}
+
+.profitemfooter div{
+    text-align: center;
+    width: 50%;
+}
+
+.profitemfooter > div > p{
+    transform: translate(0,-80%);
+    font-size: small;
+}
+
+.profitemfooter button{
+    margin-left: 20px;
+    /* margin-right: 20px; */
+    width: 50%;
+
+    border: 2px solid #fb815e;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fb815e;
+}
+
+.profitemfooter button:hover{
+    background-color: #fb815e;
+    color: white;
+}
+
+/* #proitem1 {
+    background-color: hotpink;
+} */
+
+.item1 {
+    margin-left: 50px;
+    margin-right: 25px;
+    /* background-color: hotpink; */
+}
+
+.item2 {
+    margin-right: 25px;
+    margin-left: 25px;
+    /* background-color: purple; */
+
+}
+
+.item3 {
+    margin-right: 50px;
+    margin-left: 25px;
+    /* background-color: blueviolet; */
+
 }
