@@ -1,17 +1,88 @@
-/* body{
-    background-color: pink;
-
-}
-.pink-color{
-    color:yellow;
-} */
-
+/* putting a margin for the whole section (slideshow) */
 #slideshowarea {
     display: flex;
     margin: 30px;
     
 }
+/* putting the image in the center of the screen */
 #slideshowarea img {
     height: auto;
     transform: translate(10%,0);
+}
+
+#proflistdiv {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 600px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+#scrolllist {
+    width: 20%;
+    /* background-color: pink; */
+}
+
+#proflistitems {
+    width: 80%;
+    /* background-color: purple; */
+    /* text-align: right; */
+}
+
+.vertical-menu {
+    /* width: 200px; */
+    height: 400px;
+    overflow-y: auto;
+    text-align: right;
+    direction: rtl;
+    /* border-top-right-radius: 10px;
+    border-top-left-radius: 10px; */
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /* border-radius: 10px; */
+}
+
+#proflistheader label{
+    text-align: right;
+}
+
+#proflistheader label p{
+    font-size: small;
+    color: rgb(160, 160, 160);
+}
+
+#proflistheader input {
+    display: block;
+    background-color:white;
+    color: rgb(100, 100, 100);
+    width: 98%;
+    height: 40px;
+    /* direction: ltr; */
+
+    text-align: right;
+
+    border: 1px solid rgba(177, 177, 177, 0.192);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.vertical-menu li {
+    display: block;
+    background-color:white;
+    padding: 12px;
+    direction: ltr;
+
+}
+
+.vertical-menu a {
+    text-decoration: none;
+    color: rgb(100, 100, 100);    
+}
+
+.vertical-menu a:hover {
+    color: #1780df;
+    border-bottom: 1px dashed #1780df;
 }
