@@ -1,7 +1,7 @@
 /*this css style is made for index page*/
 body {
     margin: 0;
-    background-color: #FCFCFC;
+    background-color: #f5f5f5;
 }
 /*this class keep items in center and margin both sides*/
 .common-flex{
@@ -12,6 +12,187 @@ body {
   margin-right: 10%;
   margin-left: 10%;
   /* background-color: ; */
+}
+/**********Reservation***********/
+#reservation{
+	display: flex;
+  justify-content: center;
+  line-height: auto;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+#top-of-reservation{
+  display: flex;
+  justify-content: flex-start;
+  line-height: auto;
+  flex-direction: row-reverse;
+}
+#bottom-of-reservation {
+  display: flex;
+  justify-content: space-between;
+  line-height: auto;
+  flex-direction: row-reverse;
+  margin-top: 20px;
+  margin:
+  background-image: 
+  background-size: 
+  background-color: 
+}
+#bottom-of-reservation > section{
+	/* border:1px solid green; */
+  display: flex;
+  justify-content: space-between;
+  line-height: auto;
+  /* margin:100px; */
+  background-size: 
+  background-color: 
+}
+#reservation-right {
+  background-color: #1780df;
+  border-radius: 10px!important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: auto;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-top: 
+}
+#reservation-right > * {
+  margin: 5px;
+}
+#like-share-doctor-img{
+  display: flex;
+  align-items: flex-start; 
+  justify-content: space-between;
+  line-height: auto;
+  flex-direction: row;
+  margin-top: 30px;
+}
+#like-share-doctor-img > *{
+}
+#doctor-img{
+  width: 40%;
+  height: auto;
+  margin: 0 60px 0 60px;
+  border-radius: 100px;
+}
+#doctor-information{
+	border-radius: 10px!important;
+	background-color: white;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: auto;
+  flex-direction: row-reverse;
+  margin-bottom: 20px; 
+  margin-top: 10px; 
+
+}
+#doctor-information > *{
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: auto;
+  flex-direction: column;
+  flex-wrap: wrap; 
+  margin: 10px;
+  margin-left: 25px; 
+  margin-right: 25px; 
+
+}
+#reservation-left{
+  /* border:1px solid green; */
+  background-color: white;
+  border-radius: 10px!important;
+  display: flex;
+  align-items: ;
+  line-height: auto;
+  flex-direction: column;
+}
+#reservation-left-top{
+	border-top-left-radius: 10px!important;
+	border-top-right-radius: 10px!important;
+	background-color:#1780df;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: auto;
+  flex-direction: row-reverse;
+  
+}
+#reservation-left-top > div > *{
+	display: flex;
+  flex-direction: column;
+  justify-content: ;
+  align-items: flex-end;
+  padding: 0 10px 0 50px;
+  margin: 10px 0 10px 0;
+}
+#reservation-left-top > *{
+  margin: 0px 10px 0 10px;
+}
+#reservation-left-center {
+    display: flex;
+  /* border:1px solid yellow; */
+  flex-direction: row-reverse;
+    justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;  
+  height: auto;
+}
+#reservation-left-center > div {
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,.125)!important;
+  display: flex;
+  background-color: white;
+  height: 80px;
+  width: 80px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  margin: 8px; 
+}
+#reservation-left-center > div > p{
+	margin: 0px;
+	flex-direction: column;
+  justify-content: center;
+}
+#reservation-left-bottom {
+  border: 1px solid rgba(0,0,0,.125)!important;
+  border-radius: 10px;
+  display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 20px;
+}
+#reservation-left-bottom > div {
+  display: flex;
+	flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+}
+#reservation-left-bottom > p {
+ margin-right: 10px ;
+}
+#reservation-left-bottom > div> button {
+  display: flex;
+	flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  padding: 0 10px 0 10  px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  background-color: #fb815e;
 }
 
 
