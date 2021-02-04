@@ -1,0 +1,595 @@
+/* introducing two font families */
+@font-face {
+    font-family: "Vazirfontfamily";
+    src: url("../../assets/Fonts/Vazir.ttf");
+}
+@font-face {
+    font-family: "Vazirboldfontfamily";
+    src: url("../../assets/Fonts/Vazir-Bold.ttf");
+    font-weight: bold;
+}
+
+/* body background color */
+body{
+    background-color: rgb(247, 247, 247);
+}
+/* navigation part overal */
+#navbarsection {
+    overflow: auto;
+    width: 100%;
+    top: 0;
+    z-index: 11;
+    min-height: 10%;
+}
+/* navigation part overal like before */
+.topnavbar {
+    position: fixed;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 30%;
+    background-color: white;
+    z-index: 11;
+}
+/* navigation part clinic logo margins and size and hover*/
+#logo{
+    margin-right: 12%;
+    margin-left: 4%;
+    width: 15%;
+    height: auto;
+    padding-right: 100px;
+}
+#logo:hover {
+    cursor: pointer;
+}
+/* navigation part lists display */
+.topnavbar ul{
+    display: flex;
+    flex-direction: row-reverse;
+    list-style-type: none;
+    text-align: center;
+}
+/* navigation part lists display and margins and placings*/
+.topnavbar ul li {
+    vertical-align: middle;
+    margin: 8px;
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    padding-top: 10px ;
+}
+/* navigation part lists links and hover */
+.topnavbar ul li a {
+    text-decoration: none;
+    font-family: "Vazirfontfamily";
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    color: black;
+}
+.topnavbar ul li a:hover {
+    cursor: pointer;
+    color: #fb815e;
+}
+/* navigation bar list icons */
+.navbaricons{
+    padding-left: 5px;
+    width: 20px;
+    height: auto;
+}
+/* login icon */
+#loginpic {
+    width: 20px;
+    margin-top: 5px;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/* login button and its hover */
+.topnavbar button {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40%;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(194, 194, 194);
+    font-family: "Vazirboldfontfamily";
+    font-size: larger;
+    color: #1780df;
+    vertical-align: middle;
+}
+.topnavbar button:hover {
+    cursor: pointer;
+    color: #fb815e;
+}
+
+/* search bar area overals */
+#searchbararea {
+    background-image: url("../../assets/mainpage/searchbarcover.png");
+    background-size: cover;
+    background-color: #1780df;
+    height: 280px;
+    margin: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 20px;
+}
+/* search bar header */
+#searchbararea h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    color: white;
+    font-size: 30;
+    font-family: "Vazirfontfamily";
+}
+/* search bar form structure */
+#searchbarform {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding-top: 30px;
+    height: 60px;
+}
+/* input search */
+#searchbarform input {
+    width: 330px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-family: "Vazirfontfamily";
+    text-align: right;
+    border: none;
+}
+/* city selector and its options */
+#searchbarform select {
+    font-family: "Vazirfontfamily";
+    width: 150px;
+    border: none;
+}
+#searchbarform select option {
+    border-radius: 5px;
+}
+/* search button */
+#searchbarform button {
+    font-family: "Vazirfontfamily";
+    font-size: large;
+    width: 150px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: none;
+    color: white;
+    background-color: #fb815e;
+}
+#searchbarform button:hover {
+    
+    background-color: #e6613d;
+    cursor: pointer;
+}
+
+/* best proffesionals header overal */
+#bestproheader {
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: "Vazirfontfamily";
+    padding-left: 10%;
+    padding-right: 10%;
+}
+/* see them all link + hover */
+#bestproheader a{
+    margin: 24px;
+    padding-right:65%;
+    color: blue;
+    text-decoration: none;
+}
+#bestproheader a:hover{
+    color: #fb815e;
+}
+/* clinic items area */
+#bestproitems {
+    display: flex;
+    flex-direction: row-reverse;
+    place-content: center;
+}
+/* each item css */
+.bestproitem {
+    z-index: 2;
+    width: 125px;
+    height: 150px;
+    margin: 30px;
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 10px ;
+    background-color: white;
+    font-family: "Vazirfontfamily";
+    text-align: center;
+}
+/* abut the link of each item + hover*/
+.bestproitem a {
+    text-decoration: none;
+    color: black;
+}
+.bestproitem:hover{
+    box-shadow: 5px 10px 18px #888888;
+}
+/* creating a area with an image for each item */
+.bestproitem a div {
+    margin: 10px;
+    height: 80px; 
+    border-radius: 8px;  
+}
+.bestproitem a div img{
+    padding-top: 15px;
+}
+/* items background colors */
+#maqzasab div {
+    background-color: #fdcdb0;
+}
+#gushhalq div {
+    background-color: #c5e1fb;
+}
+#dakheli div {
+    background-color: #fbcbee;
+}
+#zananzayeman div {
+    background-color: #abc2d8;
+}
+#pustomu div {
+    background-color: #b3e8ca;
+}
+#orology div {
+    background-color: #fcbaba;
+}
+#ortopedi div {
+    background-color: #e8c9fd;
+}
+
+/* comment section overal structure */
+#comments {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: "Vazirfontfamily";
+    height: 500px;
+    background-color: white;
+
+}
+/* width of each side */
+#right-comment , #commentexample {
+    width: 50%;
+    text-align: right;
+}
+/* right side header + text*/
+#right-comment h1 {
+    margin-top: 100px;
+}
+#right-comment p {
+    margin-top: 50px;
+    margin-left: 20%;
+}
+/* comment box */
+#commentexamplebox {
+    margin-top: 50px;
+    margin-left: 40px;
+    width: 90%;
+    height: 350px;
+    background-color: #e5f2fe;
+    border: 1px solid #1780df;
+    border-radius: 15px;
+}
+/* text inside of the box */
+#commenttext{
+    margin: 5px;
+    height: 220px;
+    border-bottom: 2px dashed #1465b1;
+}
+#commenttext p{
+    margin: 30px;
+    margin-top: 40px;
+}
+/* doctors introduction */
+#commentwriter {
+    display: flex;
+    flex-direction: row-reverse;
+}
+#commentwriter  div{
+    margin-left: 20px;
+    margin-right: 20px;
+    transform: translate(0%,10%);
+}
+/* button inside the box + hover */
+#commentwriter button{
+    font-family: "Vazirfontfamily";
+    margin: 5px;
+    color: white;
+    font-size: large;
+    border: 0;
+    border-radius: 10px;
+    background-color: #fb815e;
+    width: 140px;
+    height: 70px;
+}
+#commentwriter button:hover{
+    background-color: #da6544;
+    cursor: pointer;
+    
+}
+/* triangle */
+.arrowdown {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    
+    border-top: 20px solid #1780df;
+    transform: translate(115px,0px);
+}
+/* nazare felani. fuck this comments */
+#underbox p{
+      padding-right: 400px;
+}
+/* double quete on the box */
+#doubleQuete{
+    width: 50px; 
+    height: auto;
+    position: absolute;
+    transform: translate(-150%,-50%);
+}
+
+/* corona special section */
+#coronaspecial{
+    background-image: url("../../assets/mainpage/coronacover.png");
+    background-size: cover;
+
+    height: 650px ;
+
+    font-family: "Vazirfontfamily";
+}
+/* header */
+#coronaspecial h1 {
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+    font-size: x-large;
+}
+/* items area */
+#coronaitems {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 20%;
+    padding-left: 20%;
+    text-align: center;
+    color: white;
+}
+#coronaitems div {
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 30px;
+}
+#coronaitems div h4{
+    font-size: larger;
+}
+/* button of this area + hover */
+#coronaitems div button{
+    font-family: "Vazirboldfontfamily";
+    color: white;
+    font-size: large;
+
+    width: 300px;
+    height: 60px;
+    border-radius: 15px;
+    border: none;
+    background-color: #fb815e;
+}
+#coronaitems div button:hover{
+    background-color: #da6544;
+    cursor: pointer;
+
+}
+
+/* application introduction area */
+#applicationarea  {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 700px;
+    font-family: "Vazirfontfamily";    
+}
+/* sides width */
+#applicationrightside , #applicationpartdescription {
+    text-align: center;
+    margin-top: 180px;
+    width: 40%;
+} 
+/* right side area */
+#applicationrightside div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: middle;
+}
+/* right side area image */
+#applicationrightside div a img{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+/* left side area */
+#applicationpartdescription {
+    margin-right: 200px;
+    text-align: right;
+    color: #3b4157;
+}
+/* right side area form */
+#applicationpartdescription form{
+    display: flex;
+    flex-direction: row-reverse;
+}
+/* right side area form button + hover */
+#applicationpartdescription form button{
+    height: 50px;
+    width: 150px;
+    font-family: "Vazirfontfamily";
+    color: white;
+    border-radius: 15px;
+    border: none;
+    background-color: #fb815e;
+}
+#applicationpartdescription form button:hover{
+    background-color: #e6613d;
+    cursor: pointer;
+}
+/* right side area form input */
+#applicationpartdescription form input{
+    text-align: right;
+    height: 50px;
+    width: 230px;
+    border-radius: 15px;
+    border: 1px groove rgb(182, 182, 182);
+    font-family: "Vazirfontfamily";
+    margin-left: 10px;
+}
+
+/* footer area */
+#footerarea {
+    background-color: #1780df;
+    height: 880px;
+    padding-top: 50px;
+    text-align: center;
+    font-family: "Vazirfontfamily";
+    color: white;
+
+}
+/* three columns in footer area */
+#footercols{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+/* two button columns */
+.buttoncol{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+}
+/* two button columns buttons+hover */
+.buttoncol button{
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid white;
+    color: white;
+    font-family: "Vazirfontfamily";
+}
+.buttoncol button:hover{
+    background-color: white;
+    border: none;
+    color: #1780df;
+    cursor: pointer;
+}
+/* middle column */
+#footercolmiddle {
+    width: 50%;
+}
+/* socialmedia links */
+#socialmedialink a {
+    margin: 50px;
+}
+/* empty boxes for the line */
+#twoemptybox {
+    height: 150px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+#emptybox1 {
+    border-left: 1px solid white;
+    width: 50%;
+}
+#emptybox2 {
+    border-right: 1px solid white;
+    width: 50%;
+}
+/* form in the middle column */
+#forminthecol {
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+}
+#forminthecol form div {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: none;
+}
+/* email input */
+#emailinput {
+    margin-top: 5px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    text-align: right;
+    font-family: "Vazirfontfamily";
+}
+/* name + familiname input */
+.field_devided {
+    margin-left: 2px ;
+    width: 50%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    text-align: right;
+    font-family: "Vazirfontfamily";
+}
+/* sublit button + hover */
+#forminthecol form button {
+    height: 50px;
+    width: 100%;
+    font-family: "Vazirfontfamily";
+    color: white;
+    border-radius: 15px;
+    border: none;
+    background-color: #fb815e;
+}
+#forminthecol form button:hover {
+    background-color: #e6613d;
+    cursor: pointer;
+}
+
+/* footer note */
+#footernote {
+    font-family: "Vazirfontfamily";
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+}
+#footernote p {
+    width: 50%;
+    /* margin:; */
+}
+/* namaad + samandehi logos */
+#mellilogos {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-left: 41%;
+}
+#mellilogos  div{
+    margin: 20px;
+    background-color: white;
+    border: 1px groove rgb(231, 231, 231);
+    border-radius: 10px;
+    width: 100px;
+    height: 120px;
+}
+
+#mellilogos  div img{
+    margin-top: 10px;
+    width: 90px;
+    height: auto;
+
+}
