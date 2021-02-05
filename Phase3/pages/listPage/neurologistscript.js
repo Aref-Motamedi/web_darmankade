@@ -1,19 +1,19 @@
 doctorlists=[];
 
 async function fetchdocs(){
-    for(i=1;i<8;i++){
+    // for(i=1;i<8;i++){
             
-        try {
-            const doctor = await fetch(`https://intense-ravine-40625.herokuapp.com/doctors/${i}`);
-            item =await doctor.json();
-            doctorlists[i-1]=item;
+    try {
+        const doctor = await fetch(`https://intense-ravine-40625.herokuapp.com/doctors`);
+        item =await doctor.json();
+        doctorlists=item;
 
-        } catch (error) {
-            // ERROR HANDLING
-            window.alert(`Error while fetching doc ${i}`);
-        }
-        
+    } catch (error) {
+        // ERROR HANDLING
+        window.alert(`Error while fetching doc ${i}`);
     }
+        
+    // }
 
     console.log(5);
     console.log(doctorlists);
@@ -21,9 +21,7 @@ async function fetchdocs(){
     
 }
 
-async function main(){
-    await fetchdocs();
-
+async function updatelisthtml(){
     listdiv = document.getElementById('listofdocsdiv');
     listdivhtml = listdiv.innerHTML;
     listdivhtml ="";
@@ -169,8 +167,7 @@ async function main(){
                                         </circle>
                                     </svg>
                                     <span class="location text-steel mr-3">
-                                        تهران
-                                        | پونک
+                                    ${element.location}
                                     </span>
                                 </li>
                                 <li class="py-1 text-steel font-weight-bold">
@@ -195,7 +192,7 @@ async function main(){
                                         <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3">
                                         </path>
                                     </svg>
-                                    <span class="text-steel mr-3"> ${element.rate * 20}  درصد رضایت کاربران </span>
+                                    <span class="text-steel mr-3"> ${element.user_percent}  درصد رضایت کاربران </span>
                                 </li>
                             </ul>
                         </div>
@@ -252,6 +249,15 @@ async function main(){
 
 
     document.getElementById('listofdocsdiv').innerHTML=listdivhtml;
+}
+
+async function main(){
+    await fetchdocs();
+    // const doctor = await fetch(`https://intense-ravine-40625.herokuapp.com/doctors`);
+    // item =await doctor.json();
+
+    // console.log(item);
+    updatelisthtml();
 
 }
 
