@@ -251,12 +251,24 @@ async function updatelisthtml(){
     document.getElementById('listofdocsdiv').innerHTML=listdivhtml;
 }
 
+function compareSortUserPercentage(a,b){
+    if (a.user_percent > b.user_percent){
+        return -1;
+    }
+    if (a.user_percent < b.user_percent){
+        return 1;
+    }
+    return 0;
+}
+
+function sortByUP(){
+    doctorlists.sort(compareSortUserPercentage);
+    updatelisthtml();
+}
+
 async function main(){
     await fetchdocs();
-    // const doctor = await fetch(`https://intense-ravine-40625.herokuapp.com/doctors`);
-    // item =await doctor.json();
-
-    // console.log(item);
+    
     updatelisthtml();
 
 }
