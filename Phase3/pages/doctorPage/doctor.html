@@ -277,7 +277,7 @@
     <div class="pb-md-5 container">
         <!-- Page location nav row -->
         <nav aria-label="breadcrumb"
-             class="position-relative dr-breadcrumb w-100 d-block">
+             class="position-relative dr-breadcrumb w-100 d-block" id="uppernav">
             <ol class="breadcrumb m-0 bg-transparent px-0 text-14 align-items-center w-auto py-md-4 position-relative"
                 style="min-width: 600px;">
                 <li class="breadcrumb-item">
@@ -317,7 +317,7 @@
 
             <!-- Sidebar -->
             <div class="pr-md-0 px-0 pl-md-4 col-md-4 col-12">
-                <div class="blue-box sticky-top">
+                <div class="blue-box sticky-top" id="personalinfocard">
                     <!-- Card header (img & buttons) -->
                     <div class="cover">
                         <div class="w-10">
@@ -629,7 +629,7 @@
                 </div>
 
                 <!-- Single comment -->
-                <div class="row dr-card py-md-3 mb-3">
+                <div class="row dr-card py-md-3 mb-3" id="commentdivsingle">
                     <div class="row w-100">
                         <div class="header row mb-3 px-md-4 mb-md-0 pt-md-0 pb-md-0 pb-3 col-md-2 col-12">
 
@@ -777,13 +777,13 @@
                         <ul class="nav2 nav-tabs tab-nav-class" id="__BVID__154__BV_tab_controls_"
                             role="tablist">
 
-                            <li class="nav-item" role="presentation">
+                            <li class="nav-item" role="presentation" onclick="onclickaddress()">
                                 <a aria-controls="__BVID__155"
                                    aria-posinset="1"
                                    aria-selected="true"
                                    aria-setsize="2"
                                    class="nav-link active active-nav-item"
-                                   href="https://www.darmankade.com/doctor/291/#"
+                                   
                                    id="__BVID__155___BV_tab_button__"
                                    role="tab"
                                    target="_self">
@@ -802,12 +802,12 @@
                                     اطلاعات مطب
                                 </a>
                             </li>
-                            <li class="nav-item" role="presentation">
+                            <li class="nav-item" role="presentation" onclick="onclickdays()">
                                 <a aria-controls="__BVID__157" aria-posinset="2"
                                    aria-selected="false"
                                    aria-setsize="2"
                                    class="nav-link"
-                                   href="https://www.darmankade.com/doctor/291/#"
+                                   
                                    id="__BVID__157___BV_tab_button__"
                                    role="tab"
                                    tabindex="-1"
@@ -834,8 +834,11 @@
                     <div class="tab-content" id="__BVID__154__BV_tab_container_">
                         <div aria-hidden="false" aria-labelledby="__BVID__155___BV_tab_button__" class="tab-pane active"
                              id="__BVID__155" role="tabpanel"
-                             style="" tabindex="-1">
-                            <div class="tabs-body">
+                             style="" tabindex="-1" >
+                             <!-- <div aria-hidden="true" aria-labelledby="__BVID__157___BV_tab_button__" class="tab-pane"
+                             id="__BVID__157"
+                             role="tabpanel" style="display: none;"> -->
+                             <div class="tabs-body">
                                 <div class="w-100 d-flex p-2">
                                     <a
 
@@ -869,22 +872,18 @@
                         <div aria-hidden="true" aria-labelledby="__BVID__157___BV_tab_button__" class="tab-pane"
                              id="__BVID__157"
                              role="tabpanel" style="display: none;">
-                            <div class="tabs-body">
+                             <div class="tabs-body">
                                 <div class="rounded-10 my-1 row">
                                     <h4
 
                                             class="w-100 py-2  px-3 text-slate text-16 ">
                                         مطب چهارراه پونک
                                     </h4>
-                                    <div
-                                            class="text-center text-14  d-flex col row">
-                                        <p
-                                                class="text-steel row py-3 text-center col p-0   bg-gray ">
-                                            <span
-                                                    class="pb-4 m-auto">
+                                    <div class="text-center text-14  d-flex col row">
+                                        <p class="text-steel row py-3 text-center col p-0   bg-gray ">
+                                            <span class="pb-4 m-auto">
                                                 شنبه
-                                            </span> <span
-                                                class="text-dark-mint"
+                                            </span> <span class="text-dark-mint"
                                                 fill="none" height="24px"
                                                 stroke="currentColor"
                                                 stroke-linecap="round"
@@ -893,21 +892,16 @@
                                                 viewBox="0 0 24 24"
                                                 width="24px"
                                                 xmlns="http://www.w3.org/2000/svg">
-                                            <polyline
+                                                <polyline points="20 6 9 17 4 12">
+                                                </polyline>
+                                                </svg>
 
-                                                    points="20 6 9 17 4 12">
-                                            </polyline>
-                                            </svg>
-
-</span>
+                                            </span>
                                         </p>
                                     </div>
-                                    <div
-                                            class="text-center text-14  d-flex col row">
-                                        <p
-                                                class="text-steel row py-3 text-center col p-0  bg-white ">
-                                            <span
-                                                    class="pb-4 m-auto">
+                                    <div class="text-center text-14  d-flex col row">
+                                        <p class="text-steel row py-3 text-center col p-0  bg-white ">
+                                            <span class="pb-4 m-auto">
                                                 یک شنبه
                                             </span> <span
                                                 class="text-dark-mint"

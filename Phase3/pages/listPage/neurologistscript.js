@@ -30,7 +30,7 @@ async function updatelisthtml(){
         <div>
             <div class="row w-100 mb-3 bg-white p-3 border-light-gray hover-melon rounded-10">
                 <a
-                        href="https://www.darmankade.com/doctor/291/"
+                        href="../doctorPage/doctor.html?id=${element.id}"
                         class="row col-11 col-md-7 pl-md-2 px-0">
                     <div class="px-0 pl-lg-3 col-3">
                         <img
