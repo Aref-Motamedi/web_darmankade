@@ -380,16 +380,7 @@ async function presentdaysupdate(){
         } else if (i==6){
             daystring+='جمعه';
         }
-        // daystring+=`
-        // </span> <span class="text-dark-mint"
-        //     fill="none" height="24px"
-        //     stroke="currentColor"
-        //     stroke-linecap="round"
-        //     stroke-linejoin="round"
-        //     stroke-width="2"
-        //     viewBox="0 0 24 24"
-        //     width="24px"
-        //     xmlns="http://www.w3.org/2000/svg">`;
+        
         if (doctoritem.week_days[i]==true){
             daystring+=`</span> <span class="text-dark-mint"
             fill="none" height="24px"
@@ -400,7 +391,12 @@ async function presentdaysupdate(){
             viewBox="0 0 24 24"
             width="24px"
             xmlns="http://www.w3.org/2000/svg">
-            <polyline points="20,6 9,17 4,12">
+            <svg height="24" width="24">
+            <polyline points="20,6 9,17 4,12" fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2">
             </polyline>
             </svg>
             
@@ -419,9 +415,21 @@ async function presentdaysupdate(){
             viewBox="0 0 24 24"
             width="24px"
             xmlns="http://www.w3.org/2000/svg">
-            <line x1="18" x2="6" y1="6" y2="18">
+            <svg height="24" width="24">
+
+            <line x1="18" x2="6" y1="6" y2="18" fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2">
             </line>
-            <line x1="6" x2="18" y1="6" y2="18">
+            <line x1="6" x2="18" y1="6" y2="18"
+            fill="none"
+            height="24px"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2">
             </line>
             </svg>
             </span>
