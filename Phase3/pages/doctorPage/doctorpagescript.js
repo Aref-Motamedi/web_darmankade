@@ -477,14 +477,14 @@ async function onclickdays(){
 async function exitgal(){
     if (displayison==true){
         document.getElementById("gallerysection").setAttribute("style","display:none;");
-        document.getElementById("sec-gal").setAttribute("style","z-index: 1000; background-color: black;");
+        document.getElementById("sec-gal").setAttribute("style","z-index: 1000;   background-color: rgba(29, 29, 29, 0.81);");
         displayison=false;
     } 
 }
 async function startgall(){
     if (displayison==false){
         document.getElementById("gallerysection").setAttribute("style","");
-        document.getElementById("sec-gal").setAttribute("style","z-index: 1000; background-color: black; padding: 20px;");
+        document.getElementById("sec-gal").setAttribute("style","z-index: 1000;   background-color: rgba(29, 29, 29, 0.81); padding: 20px; position:fixed; ");
 
         showimg();
         displayison=true;
