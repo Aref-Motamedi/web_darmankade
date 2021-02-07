@@ -352,7 +352,10 @@ async function presentdaysupdate(){
     weekdaysboxelem = document.getElementById("__BVID__157");
     weekdaysboxhtml = weekdaysboxelem.innerHTML;
 
-    addressarea=doctoritem.address.split("-")[0];
+    addressarea=doctoritem.address.split("،")[0];
+    if (doctoritem.address==addressarea){
+        addressarea=doctoritem.address.split("-")[0];
+    }
     // console.log(addressarea);
     weekdaysboxhtml= `<div class="tabs-body">
     <div class="rounded-10 my-1 row">
