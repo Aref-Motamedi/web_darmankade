@@ -1,4 +1,6 @@
 doctoritem = null;
+imgcounter=0;
+displayison=false;
 
 async function fetchdoctor(id){
     try {
@@ -50,7 +52,7 @@ async function updatepersonalinfohtml(){
             <img
                     alt="نوبت دهی دکتر ${doctoritem.name}  ${doctoritem.spec}"
                     class="rounded-circle p-0 dr-profile"
-                    src=${doctoritem.avatar}>
+                    src=${doctoritem.avatar} onclick="startgall()">
         </div>
         <div class="w-10">
             <div>
@@ -472,7 +474,56 @@ async function onclickdays(){
 
 }
 
+async function exitgal(){
+    if (displayison==true){
+        document.getElementById("gallerysection").setAttribute("style","display:none;");
+        document.getElementById("sec-gal").setAttribute("style","z-index: 1000; background-color: black;");
+        displayison=false;
+    } 
+}
+async function startgall(){
+    if (displayison==false){
+        document.getElementById("gallerysection").setAttribute("style","");
+        document.getElementById("sec-gal").setAttribute("style","z-index: 1000; background-color: black; padding: 20px;");
+
+        showimg();
+        displayison=true;
+    }
+}
+
+async function showimg(){
+    switch(imgcounter){
+        case 1:
+            document.getElementById("photoitemingallery").src="../../assets/img/skill_Page/slideShowImg.png";
+            break;
+        case 2:
+            document.getElementById("photoitemingallery").src="../../assets/img/app.png";
+            break;
+        case 3:
+            document.getElementById("photoitemingallery").src="../../assets/img/mentor_list.png";
+            break;
+    }
+}
+
+async function rightimg(){
+    if (imgcounter>=1 && imgcounter<3){
+        imgcounter++;
+    } else{imgcounter=1;}
+
+    showimg();
+}
+
+async function leftimg(){
+    if (imgcounter>1 && imgcounter<=3){
+        imgcounter--;
+    } else{imgcounter=3;}
+
+    showimg();
+}
+
 async function main(){
+    imgcounter=1;
+    document.getElementById("gallerysection").setAttribute("style","display:none;");
     let params = new URLSearchParams(location.search);
     docid= params.get('id');
     await fetchdoctor(docid);
@@ -482,7 +533,11 @@ async function main(){
     updatecommentboxhtml();
     updateaddress();
     presentdaysupdate();
+    
 
 }
 
 main();
+
+
+
