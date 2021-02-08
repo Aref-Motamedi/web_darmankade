@@ -4,30 +4,33 @@ async function fetchdocs(searchkey){
     // for(i=1;i<8;i++){
     doctorlists=[];
             
-    try {
-        const doctor = await fetch(`https://intense-ravine-40625.herokuapp.com/doctors`);
-        item =await doctor.json();
-        if (searchkey==null){
-            doctorlists=item;
-        } else{
-        item.forEach(element => {
-            if (element.name.includes(searchkey) || element.spec.includes(searchkey)){
-                doctorlists.push(element)
-            }
-        });
-        }
+    // try {
+    //     const doctor = await fetch(`https://intense-ravine-40625.herokuapp.com/doctors`);
+    //     item =await doctor.json();
+    //     if (searchkey==null){
+    //         doctorlists=item;
+    //     } else{
+    //     item.forEach(element => {
+    //         if (element.name.includes(searchkey) || element.spec.includes(searchkey)){
+    //             doctorlists.push(element)
+    //         }
+    //     });
+    //     }
         
 
-    } catch (error) {
-        // ERROR HANDLING
-        window.alert(`Error while fetching doc`);
-    }
+    // } catch (error) {
+    //     // ERROR HANDLING
+    //     window.alert(`Error while fetching doc`);
+    // }
 
     respond=null;
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-        console.log(this.response);
+        this.response.massage.forEach(element => {
+            docitem= dbtranslatetojson(element);
+            doctorlists.push(docitem);
+        });
       }
     };
     xmlhttp.open("GET", "/web_darmankadeh/public/searchDoctors?name="+searchkey, false);
@@ -279,6 +282,48 @@ function compareSortUserPercentage(a,b){
         return 1;
     }
     return 0;
+}
+
+function dbtranslatetojson(obj){
+    doctorjson={
+        "name": obj.name,
+        "avatar":"https://www.darmankade.com/UploadFiles/Doctor/131899428573066339%D8%AF%DA%A9%D8%AA%D8%B1-%D9%85%D9%87%D8%B1%D8%A7%D9%86-%D8%AC%D9%84%D8%A7%D9%84%DB%8C.jpg",
+        "spec":"",
+        "number":obj.drNumber,
+        "online_pay":obj.onlinePay,
+        "ecperience_years": obj.experienceYears,
+        "first_empty_date":"23 بهمن",
+        "stars": Math.random()*5,
+        "user_percent": Math.floor(Math.random()*21) + 80,
+        "address": obj.address,
+        "location": "تهران پونک",
+        "commenter":"سلطان بهشتی",
+        "comments" : Math.floor(Math.random()*100),
+        "comment_text":"عزت و جلال و کبریا. وحشت و وشی زمین و زمان، والا مقام، سلطان حسین بهشتی",
+        "phone": obj.phoneNumber
+    };
+    switch(obj.spec){
+        case 1:
+            doctorjson.spec="اورتوپدی"
+            break;
+        case 2:
+            doctorjson.spec="اورولوژی"
+            break;
+        case 3:
+            doctorjson.spec="پوست و مو"
+            break;
+        case 4:
+            doctorjson.spec="زنان و زایمان"
+            break;
+        case 5:
+            doctorjson.spec="مغز و اعصاب"
+            break;
+        case 6:
+            doctorjson.spec="دیگر"
+            break;
+    }
+    return doctorjson;
+
 }
 
 function sortByUP(){
