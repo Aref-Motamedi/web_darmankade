@@ -33,9 +33,9 @@
         <section id="searchbararea">
             <h1>درمانکده - مشاوره آنلاین و حضوری</h1>
             <div id="searchbarareadiv">
-                <form action="#actione" id="searchbarform">
+                <div id="searchbarform">
                     <!-- input part -->
-                    <input type="text" placeholder="نام پزشک، تخصص، یا محل مورد نظر را جستجو کنید.">
+                    <input type="text" placeholder="نام پزشک، تخصص، یا محل مورد نظر را جستجو کنید." id="search_bar_input">
                     <!-- city selector -->
                     <select name="cityselector" id="cityselector">
                         <option value="tehran">تهران</option>
@@ -45,8 +45,8 @@
                         <option value="tabriz">تبریز</option>
                     </select>
                     <!-- find button -->
-                    <button type="submit">جستجو</button>
-                </form>
+                    <button type="button" onclick="searchbutt()">جستجو</button>
+                </div>
             </div>
         </section>
         <!-- best proffesionals in the Clinic -->

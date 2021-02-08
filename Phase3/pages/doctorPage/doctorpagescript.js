@@ -9,7 +9,7 @@ async function fetchdoctor(id){
         
     } catch (error) {
         // ERROR HANDLING
-        window.alert(`Error while fetching doc ${i}`);
+        window.alert(`Error while fetching doc ${id}`);
     }
     console.log(doctoritem);
 }

@@ -4,8 +4,8 @@ for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
 }
 
-function listredirect(){
-    window.location="../listPage/neurologist.html";
+function listredirect(speckey){
+    window.location="../listPage/neurologist.html?spec="+speckey;
 }
 
 function slideShowchange(){
