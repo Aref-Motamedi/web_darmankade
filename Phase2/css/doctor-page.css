@@ -72,6 +72,7 @@ body {
   margin-top: 30px;
 }
 #like-share-doctor-img > *{
+  color: white;
 }
 #doctor-img{
   width: 40%;

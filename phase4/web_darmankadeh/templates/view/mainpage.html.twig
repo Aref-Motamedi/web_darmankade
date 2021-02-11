@@ -1,0 +1,293 @@
+<html>
+    <head>
+        <!-- title -->
+        <title>
+            درمانکده - مشاوره آنلاین و ویزیت حضوری - آزمایش در محل
+        </title>
+        <!-- css file insert -->
+        <link rel="stylesheet" href="mainpagestyle.css">
+    </head>
+    <body>
+        <!-- navigation bar section -->
+        <section id="navbarsection">
+            <div class="topnavbar">
+                <!-- Clinic logo -->
+                <img src="../../assets/mainpage/navbarlogo.svg" alt="NO_IMG" id="logo">
+                <!-- items -->
+                <ul>
+                    <li><a href="#prolist"><img src="../../assets/mainpage/menuicon.svg" alt="menu" class="navbaricons"> <p> لیست تخصص ها</p></a></li>
+                    <li><a href="#onlinecons"><img src="../../assets/mainpage/wifiicon.svg" alt="wifi" class="navbaricons"><p>مشاوره آنلاین</p></a></li>
+                    <li><a href="#medicalmag"><img src="../../assets/mainpage/magicon.svg" alt="mag" class="navbaricons"><p>مجله پزشکی</p></a></li>
+                    <li><a href="#doclogin"><img src="../../assets/mainpage/newmembericon.svg" alt="newmem" class="navbaricons"><p>عضویت پزشکان</p></a></li>
+                    <li><a href="#coronas"><img src="../../assets/mainpage/cubeicon.svg" alt="cube" class="navbaricons"><p> کرونا سازمانی</p></a></li>
+                    
+                </ul>
+                <!-- login page button -->
+                <div>
+                    <button type="button" class="loginbutt" onclick="loginbottunsubmit()"> <img src="../../assets/mainpage/tologin.svg" alt="login" id="loginpic"> ورود</button>
+
+                </div>
+            </div>
+        </section>
+        <!-- search bar section -->
+        <section id="searchbararea">
+            <h1>درمانکده - مشاوره آنلاین و حضوری</h1>
+            <div id="searchbarareadiv">
+                <div id="searchbarform">
+                    <!-- input part -->
+                    <input type="text" placeholder="نام پزشک، تخصص، یا محل مورد نظر را جستجو کنید." id="search_bar_input">
+                    <!-- city selector -->
+                    <select name="cityselector" id="cityselector">
+                        <option value="tehran">تهران</option>
+                        <option value="mashhad">مشهد</option>
+                        <option value="yazd">یزد</option>
+                        <option value="esfahan">اصفهان</option>
+                        <option value="tabriz">تبریز</option>
+                    </select>
+                    <!-- find button -->
+                    <button type="button" onclick="searchbutt()">جستجو</button>
+                </div>
+            </div>
+        </section>
+        <!-- best proffesionals in the Clinic -->
+        <section id="bestpros">
+            <div id="bestproheader">
+                <h1>بهترین تخصص های درمانکده</h1>
+                <a href="goToSkillPage"> مشاهده همه</a>
+            </div>
+            <div id="bestproitems">
+                <!-- ORTOPEDI ITEM -->
+                <div class="bestproitem" id="ortopedi">
+                    <a href="goToNeurologist">
+                        <div>
+                            <img src="../../assets/mainpage/ortopedi.png" alt="ortopedi">
+                        </div>
+                        <p>ارتوپدی</p>
+                    </a>
+                </div>
+                <!-- OROLOGY ITEM -->
+                <div class="bestproitem" id="orology">
+                    <a href="goToNeurologist">
+                        <div>
+                            <img src="../../assets/mainpage/orology.png" alt="ortopedi">
+                        </div>
+                        <p>اورولوژی</p>
+                    </a>
+                </div>
+                <!-- HAIR AND SKIN ITEM -->
+                <div class="bestproitem" id="pustomu">
+                    <a href="goToNeurologist">
+                        <div>
+                            <img src="../../assets/mainpage/pustmust.png" alt="ortopedi">
+                        </div>
+                        <p>پوست و مو</p>
+                    </a>
+                </div>
+                <!-- WOMEN PART ITEM -->
+                <div class="bestproitem" id="zananzayeman">
+                    <a href="goToNeurologist">
+                        <div>
+                            <img src="../../assets/mainpage/zananzayeman.png" alt="ortopedi">
+                        </div>
+                        <p>زنان و زایمان</p>
+                    </a>
+                </div>
+                <!-- INTERNAL ITEM -->
+                <div class="bestproitem" id="dakheli">
+                    <a href="goToNeurologist">
+                        <div>
+                            <img src="../../assets/mainpage/dakheili.png" alt="ortopedi">
+                        </div>
+                        <p>داخلی</p>
+                    </a>
+                </div>
+                <!-- EAR NOSE THROUGHT ITEM  -->
+                <div class="bestproitem" id="gushhalq">
+                    <a href="goToNeurologist">
+                        <div>
+                            <img src="../../assets/mainpage/gushhalq.png" alt="ortopedi">
+                        </div>
+                        <p>گوش، حلق و بینی</p>
+                    </a>
+                </div>
+                <!-- BRAIN AND NOURON ITEM -->
+                <div class="bestproitem" id="maqzasab">
+                    <a href="goToNeurologist">
+                        <div>
+                            <img src="../../assets/mainpage/maqzasab.png" alt="ortopedi">                         
+                        </div>
+                        <p>مغز و اعصاب</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <br><br><br>
+        <!-- Comment section -->
+        <section id="comments">
+            <!-- right side of page -->
+            <div id="right-comment">
+                <h1>
+                    نظرات و روند درمانی بیماران
+                </h1>
+                <p>
+                    شما می توانید تجربه مراجعه کاربران دیگر به پزشکان را بخوانید و از علت مراجعه سایر بیماران و روند درمانی آن ها آگاهی یابید.
+                </p>
+            </div>
+            <!-- left side example comment -->
+            <div id="commentexample">
+                <!-- coment box -->
+                <div id="commentexamplebox">
+                    <img src="../../assets/mainpage/doublegiuome.png" alt="doubleQuete" id="doubleQuete">
+                    <!-- text -->
+                    <div id="commenttext">
+                        <p>دکتر اشراقی بسیارعالی هستن</p>
+                    </div>
+                    <!-- about doctor -->
+                    <div id="commentwriter">
+                        <img src="../../assets/mainpage/dr_man.png" alt="writerphoto" style="width: 70px; height: auto; margin: 5px; margin-right: 10px;">
+                        <div>
+                            <b>دکتر عمید اشراقی</b><br>
+                            فوق تخصص گوارش، کبد و آندوسکوپی
+                        </div>
+                        <button type="button">مشاهده سایر نظرات</button>
+                    </div>
+                        
+                </div>
+                <div id="underbox">
+                    <div class="arrowdown"></div>
+                    <p>نظر امیر اسمعیل</p>
+                </div>
+            </div>
+        </section>
+        <!-- Corona special Section -->
+        <section id="coronadontworry">
+            <div id="coronaspecial">
+                <h1>نگران کرونا نباشید</h1>
+                <div id="coronaitems">
+                    <!-- right item -->
+                    <div id="coronaitemone">
+                        <img src="../../assets/mainpage/coronaitem1.png" alt="coronaitem1" style="width: 300px;">
+                        <h4>تست کرونا و آنتی بادی در محل</h4>
+                        <p>اگر در شهرهای تهران، مشهد، اصفهان، کرج، شیراز و اهواز هستید، می‌توانید بدون مراجعه به آزمایشگاه و در محل مدنظر خود آزمایش کرونا بدهید.
+                        </p>
+                        <button type="button">درخواست آزمایش</button>
+                    </div>
+                    <!-- left item -->
+                    <div id="coronaitemtwo">
+                        <img src="../../assets/mainpage/coronaitem2.png" alt="coronaitem2" style="width: 300px;">
+                        <h4>مشاوره آنلاین و فوری</h4>
+                        <p>با تست آنلاین کرونا علائم خود را بررسی کنید و اگر مشکوک بودید میتوانید به صورت فوری با پزشکان عمومی مشاوره آنلاین داشته باشید.
+                        </p>
+                        <button type="button">دریافت مشاوره فوری</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- application introduction section -->
+        <section id="application">
+            <div id="applicationarea">
+                <!-- right side pictures -->
+                <div id="applicationrightside">
+                    <a href="#app">
+                        <img src="../../assets/mainpage/apprightcover.png" alt="apprightcover" style="width: 460px;">
+                    </a>
+                    <br><br>
+                    <div id="appstores">
+                        <a href="#app">
+                            <img src="../../assets/mainpage/cafebazar.png" alt="cafebazar" style="width: 30px;">
+                        </a><a href="#app">
+                            <img src="../../assets/mainpage/appleicon.png" alt="applestore" style="width: 30px;">
+                        </a><a href="#app">
+                            <img src="../../assets/mainpage/googleplayicon.png" alt="googleplayicon" style="width: 30px;">
+                        </a>
+                    </div>
+                </div>
+                <!-- left side notes -->
+                <div id="applicationpartdescription">
+                    <h1>دانلود اپلیکیشن درمانکده</h1>
+                    <p>با اپلیکیشن درمانکده با پزشکان و روانشناسان آنلاین مشاوره کنید یا برای ویزیت حضوری آنلاین نوبت بگیرید.</p>
+                    <br>
+                    <p><b>برای دریافت لینک دانلود، شماره موبایل خود را وارد کنید.
+                    </b></p>
+                    <br>
+                    <form>
+                        <input type="text" placeholder="مانند 09121111111">
+                        <button type="submit">ارسال لینک</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- footer section -->
+        <section id="footer">
+            <div id="footerarea">
+                <img src="../../assets/mainpage/darmankadelogo.svg" alt="darmankadelogo">
+                <p>درمانکده، ارائه دهنده خدمات آنلاین سلامت</p>
+                <p>(نوبت گیری اینترنتی، مشاوره آنلاین، آزمایش در محل و ...)</p>
+                <br>
+
+                <div id="footercols">
+                    <!-- right side buttons -->
+                    <div id="footercolright" class="buttoncol">
+                        <button type="button">درباره درمانکده</button>
+                        <button type="button">تماس با ما</button>
+                        <button type="button" >مجله پزشکی</button>
+                    </div>
+                    <!-- middle side informations -->
+                    <div id="footercolmiddle">
+                        <!-- social media links -->
+                        <div id="socialmedialink">
+                            <a href="https://www.linkedin.com/company/darmankade.ir"><img src="../../assets/mainpage/linkedin.svg" alt="linkedin" style="width: 40px;"></a>
+                            <a href="https://twitter.com/darmankade"><img src="../../assets/mainpage/twitter.svg" alt="twitter" style="width: 40px;"></a>
+                            <a href="https://www.instagram.com/darmankade/"><img src="../../assets/mainpage/insta.svg" alt="insta" style="width: 40px;"></a>
+                        </div>
+                        <!-- this empty boxes are for that line -->
+                        <div id="twoemptybox">
+                            <div id="emptybox1"></div>
+                            <div id="emptybox2"></div>
+                        </div>
+                        <!-- notification form -->
+                        <div id="forminthecol">
+                            <p>با ثبت‌نام در خبرنامه درمانکده، اولین نفری باشید که از جدیدترین خبرها، جشنواره‌ها و تخفیف های ویژه ما مطلع می‌شوید</p>
+                            <form action="#k">
+                                <div>
+                                    <input type="text" placeholder="نام" class="field_devided">
+                                    <input type="text" placeholder="نام خانوادگی" class="field_devided">
+                                </div>
+                                <br>
+                                <input type="text" placeholder="ایمیل" id="emailinput">
+                                <br> <br>
+                                <button type="submit">عضو می شوم</button>
+                            </form>
+    
+    
+    
+                        </div>
+                    </div>
+                    <!-- left side buttons -->
+                    <div id="footercolleft" class="buttoncol">
+                        <button type="button">سوالات متداول</button>
+                        <button type="button">قوانین و مقررات</button>
+                        <button type="button">شکایت</button>
+                    </div>
+
+                </div>
+                <!-- nahaad and samandehi logos -->
+                <div id="mellilogos">
+                    <div id="namaad">
+                        <img src="../../assets/mainpage/namaad.jpg" alt="namadelec">
+                    </div>
+                    <div id="samandehi">
+                        <img src="../../assets/mainpage/samandehi.jpg" alt="samandehi">
+                    </div>
+                </div>
+            </div>
+            <!-- footnotes! -->
+            <div id="footernote">
+                <p>تمامی حقوق این سایت برای عاقا عارف محفوظ است</p>
+                <p>طراحی شده با زجر توسط عاقا عارف</p>
+            </div>
+        </section>
+        <script src="mainpagescript.js" type="text/javascript"></script>
+        
+    </body>
+</html>
