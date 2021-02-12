@@ -7150,3 +7150,7 @@ input::placeholder {
   .form-container .btn:hover, .open-button:hover {
     opacity: 1;
   }
+  
+#reserveForm {
+    margin-right: 30%;
+}

@@ -626,7 +626,8 @@
                         <div>
                             <div class="row text-right justify-content-between">
                                 <div class="col-md-5 col-12">
-                                    <div class="form-popup" id="myForm">
+                                    
+                                    <div class="form-popup" id="commentForm">
                                         <form action="/action_page.php" class="form-container">
                                       
                                           <label for="stars"><b>امتیاز دهید</b></label>
@@ -639,14 +640,33 @@
                                           </select>
                                           
                                         <br>
+                                        <br>
 
-                                          <label for="cmnt"><b>نظر دهید</b></label>
+                                          <label for="cmnt"><b>نظر خود را وارد کنید</b></label>
                                           <input type="text" placeholder="نظر خود را وارد کنید" name="cmnt" required>
                                       
                                           <button type="submit" class="btn">Send</button>
-                                          <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+                                          <button type="button" class="btn cancel" onclick="closeForm('CMD')">Close</button>
                                         </form>
                                     </div>
+                                    <div class="form-popup" id="reserveForm">
+                                        <form action="/action_page.php" class="form-container">
+                                            <h5>رزرواسیون</h5>
+                                          <label for="reservetimechoice"><b>تایم مناسب خود را جهت ویزیت رزرو کنید.</b></label>
+                                          <select id="reservetimechoice" name="reservetimechoice" required>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                          </select>
+                                        <br>
+
+                                          <button type="submit" class="btn">Send</button>
+                                          <button type="button" class="btn cancel" onclick="closeForm('RSRV')">Close</button>
+                                        </form>
+                                    </div>
+                                    
                                     <h5 class="text-slate font-weight-bold text-14">
                                         <svg fill="none"
                                              height="24px" stroke="currentColor" stroke-linecap="round"

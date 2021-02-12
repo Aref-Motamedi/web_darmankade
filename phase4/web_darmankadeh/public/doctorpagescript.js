@@ -575,12 +575,19 @@ async function leftimg(){
     showimg();
 }
 
-function openForm() {
-    document.getElementById("myForm").style.display = "block";
+function openForm(str) {
+    if (str=="CMD")
+        document.getElementById("commentForm").style.display = "block";
+    else if (str=='RSRV')
+        document.getElementById("reserveForm").style.display = "block";
+
 }
   
-function closeForm() {
-    document.getElementById("myForm").style.display = "none";
+function closeForm(str) {
+    if (str=="CMD")
+        document.getElementById("commentForm").style.display = "none";
+    else if (str=='RSRV')
+        document.getElementById("reserveForm").style.display = "none";
 }
   
 
