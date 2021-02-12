@@ -575,6 +575,15 @@ async function leftimg(){
     showimg();
 }
 
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
+  
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
+  
+
 async function main(){
     imgcounter=1;
     document.getElementById("gallerysection").setAttribute("style","display:none;");

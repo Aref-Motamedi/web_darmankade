@@ -626,6 +626,27 @@
                         <div>
                             <div class="row text-right justify-content-between">
                                 <div class="col-md-5 col-12">
+                                    <div class="form-popup" id="myForm">
+                                        <form action="/action_page.php" class="form-container">
+                                      
+                                          <label for="stars"><b>امتیاز دهید</b></label>
+                                          <select id="starsrate" name="stars" required>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                          </select>
+                                          
+                                        <br>
+
+                                          <label for="cmnt"><b>نظر دهید</b></label>
+                                          <input type="text" placeholder="نظر خود را وارد کنید" name="cmnt" required>
+                                      
+                                          <button type="submit" class="btn">Send</button>
+                                          <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+                                        </form>
+                                    </div>
                                     <h5 class="text-slate font-weight-bold text-14">
                                         <svg fill="none"
                                              height="24px" stroke="currentColor" stroke-linecap="round"
@@ -732,6 +753,12 @@
                                     <p class="text-14 text-slate mr-4 pr-2 mt-2">
                                         45 دقیقه
                                     </p>
+                                    <br>
+                                    <br>
+                                    <button type="button" style="width: 100px; height: 30px; background-color:#1780df; border-radius: 10px;"
+                                        onclick="openForm()">
+                                         نظر دهید
+                                        </button>
                                 </div>
                             </div>
                             <div class="rounded-10 row bg-white border py-2 my-3" id="">
